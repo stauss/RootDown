@@ -1,0 +1,141 @@
+//========================================================================// 
+                                                                         //
+    // _site.scss                                                       //     SITE STYLES
+                                                                       //
+//====================================================================//
+
+
+
+//=====//=====//   Root Styles  //=====//=====//
+
+// Viewport MQ's
+
+@-webkit-viewport {width:device-width;}
+@-moz-viewport {width:device-width;}
+@-ms-viewport {width:device-width;}
+@-o-viewport {width:device-width;}
+@viewport {width:device-width;}
+
+// fixes padding equations
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+html {
+  font-size : 62.5%;
+  width : 100%; height:100%;
+  -webkit-overflow-scrolling : touch;
+  -webkit-tap-highlight-color : lighten($basecolor, 75%);
+  -webkit-text-size-adjust : 100%;
+  -ms-text-size-adjust : 100%;
+   background-color : $bodyBg;
+   overflow-x: hidden;
+}
+
+body {
+  @include font-size();
+  overflow-x: hidden;
+
+  width : 100%; 
+  height: 100%;
+  margin : 0;
+  padding : 0;
+
+  font-family : $basefont;
+  line-height : $baselineheight;
+  color : $textcolor;
+
+  background-color : $bodyBg;
+}
+
+// Box sizing for all elements | this allows us not to do math for padding and such
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+
+//=====//=====//   Helper Styles  //=====//=====//
+
+.left {
+  display:block; 
+  float:left;
+}
+
+.right {
+  display:block; 
+  float:right;
+}
+
+.bold {
+  font-weight:bold;
+}
+
+.spr {
+  background-image:url('../img/sprite.png');
+}
+
+.hidden{
+  display:none;
+}
+
+
+// mobile only elements | elements that are specified only for a mobile device
+.mOnly {
+  display: block;
+  visibility: visible;
+}
+
+// non mobile elements | elements that are not specified for a mobile device
+.nonM {
+  // position: absolute !important;
+  // top: -9999px !important;
+  // left: -9999px !important;
+   display: none !important;
+   visibility: hidden;
+}
+
+// row | used as a wraper to create a "row"
+.row {
+  display: block;
+  float: left;
+}
+
+//=====//=====//   Element Size Syles   //=====//=====//
+
+// fullWrap is used to wrap elements the full width of the parent element ( body / gWrap / ect.)
+.fullWrap {
+  width: 100%;
+}
+
+// full is for full width elements inside of another element
+.full {
+  width: 100%;
+}
+
+// half is for half width elements
+.half {
+  width: 100%;
+}
+
+// quarter is for quarter width elements
+.quarter {
+  width: 100%;
+}
+
+.mid {
+  display: block;
+}
+
+// All tout style
+.tout {
+  display: block;
+  padding:5%;
+}
+
+
+
+
+
+
+
+
+
+

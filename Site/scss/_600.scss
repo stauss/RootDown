@@ -1,0 +1,149 @@
+//========================================================================// 
+	                                                                     //
+		// _600.scss                		                            //     600
+	                                                                   //
+//====================================================================//
+
+
+
+
+// !!!EDIT | these are only for wires | ID 
+#chelsey, #victoria, #eleanor {
+	display: none !important;
+}
+
+
+
+
+
+
+// mobile only elements | elements that are specified only for a mobile device
+.mOnly {
+  display: none;
+  visibility: hidden;
+}
+
+.nonM {
+  // position: absolute !important;
+  // top: -9999px !important;
+  // left: -9999px !important;
+   display: block !important;
+   visibility: visible;
+}
+
+
+
+
+
+
+//-------------------------------------------------| Global Wrap *
+.gWrap {
+	// !!!EDIT padding needs to be a % not a px value, for some reason cant set a max width with padding being a % ???
+	//padding:0 20px;
+}
+
+
+.gContent {
+
+	padding: 20px;
+
+}
+
+
+//-------------------------------------------------| Global Header *
+.gHeader {
+	height: 150px;
+}
+
+//-------------------------------------------------| Global Touts*
+
+// tout padding wrap | disable padding
+.gToutPad {
+	padding: 0;
+}
+
+
+
+
+
+
+// fullWrap is used to wrap elements the full width of the parent element ( body / gWrap / ect.)
+.fullWrap {
+  width: 100%;
+}
+
+// full is for full width elements inside of another element
+.full {
+  width: 100%;
+}
+
+// half is for half width elements
+.half {
+  width: 50%;
+}
+
+// quarter is for quarter width elements
+.quarter {
+  width: 25%;
+}
+
+// Wrap bottom margin
+.wrapPad {
+  padding: 0 0 40px 0;
+}
+
+.mid {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+
+
+// WIRERAMFE CLASSES NEED TO BE DELETED AFTER WIRE IS FINISHED
+// global logo inside of header
+.brand {
+	text-align: center;
+	padding: 15px 5% 0 5%;
+}
+
+// global social links
+.gSocial {
+	display: block;
+	position: absolute !important;
+	top: 25px;
+}
+
+
+// global facebook
+.gFacebook {
+	left: 5%;
+}
+
+// global instagram
+.gInstagram {
+	right: 5%;
+}
+
+// Global nav wrap creates full width nav wrapper
+.gNavWrap {
+	max-height: 75px;
+
+	position: absolute;
+	bottom: 0px;
+
+	background-color: $wire2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

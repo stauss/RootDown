@@ -1,0 +1,219 @@
+//======================================================================// 
+                                                                       //
+     // _page.scss              		                           
+		                                                     		 //-----[ Page
+//==================================================================//
+
+   
+       
+/*  
+    
+    This file defines page specific elements ( home | about | classes ) ect.
+
+*/
+
+
+
+
+//==================================================================
+//	Home Page
+//==================================================================
+
+
+
+//-------------------------------------------------| Tout Wraps
+// tout wrap spec on the index page
+.iToutWrap {
+	display: block;
+	float: left;
+	width: 100%;
+}
+
+// all section in wrap are 100% in height
+.iToutWrap section {
+	height: 100%;
+}
+
+
+
+
+//-------------------------------------------------| About Tout
+.aboutTout {
+	float: left;
+
+	background-color: $wire1;
+}
+
+
+
+
+//-------------------------------------------------| Classes Tout
+.classesTout {
+	float: left;
+
+	background-color: $wire2;
+}
+
+
+
+//-------------------------------------------------| Finder Tout
+.finderTout {
+	float: left;
+
+	background-color: $wire3;
+}
+
+
+
+//-------------------------------------------------| Newsletter Tout
+.newsletterTout {
+	float: left;
+	height: 90px;
+	padding: 1% 3% 3% 3%;
+
+	background-color: $wire4;
+}
+
+
+
+//-------------------------------------------------| Adult/Kid Yoga
+// yoga for section
+.yogaFor {
+	float: left;
+	min-height: 350px;
+}
+
+// yoga for adults
+.adultYoga {
+
+	background-color: $wire1;
+}
+
+// yoga for kids
+.kidYoga {
+
+	background-color: $wire2;
+}
+
+
+
+//-------------------------------------------------| Pub section
+// published material wrap ( Snapguide / blog )
+.iPub {
+	float: left;
+	height: 500px;
+	background-color: $wire3;
+}
+
+// sections in pub wrap
+.iPub section {
+	float: left;
+	width: 100%;
+	height: 100%;
+
+	background-color: $white;
+}
+
+// div inside of iPub used to create padding
+.iPubPad {
+	float: left;
+	height: 100%;
+	padding: 4%;
+
+}
+
+
+
+//-------------------------------------------------| Instagram Wrap
+// wraps all instagram images
+.iGram {
+	float: left;
+	overflow: hidden;
+	height: auto;
+	max-height: 338px;
+	background-color: $wire1;
+	margin: 0 0 40px 0;
+}
+
+// insagram images 
+.iGram img{
+	float: left;
+	width: 14.2857143%; // width 100% divided by number images in each row (7)   |   100 / 7 = 14.2857143% 
+	max-height: 169px;
+}
+
+
+//==================================================================
+//	About Page
+//==================================================================
+// teachers wrap | this wraps all teachers
+.tea {
+	display: block;
+	float: left;
+	background-color: $wire1;
+}
+
+// nav for the teachers section
+.teaLinks {
+	display: block;
+	width: 100%;
+	height: 50px;
+	margin: 0 auto;
+
+	background-color: $white;
+}
+
+// teachers links list items
+.teaLinks li {
+	display: block;
+	float: left;
+	width: 25%;
+	height: 100%;
+}
+
+// actual teachers links <a> tags
+.teaLinks li a {
+	width: 100%;
+	height: 100%;
+	padding: 12px 0;
+
+	text-align: center;
+
+	border-left: 1px solid #ccc;
+}
+
+// !!!EDIT first childs border needs to be taken away via the : first-child selector
+
+
+
+
+//==================================================================
+//	Classes Page
+//==================================================================
+
+// Wraps all indivisual classes
+.classWrap {
+	display: block;
+	float: left;
+}
+
+// Two called out Yoga Type Classes at the bottom of the classes page
+.yogaType {
+	display: block;
+	float: left;
+}
+
+
+
+
+
+
+//==================================================================
+//	Contact Page
+//==================================================================
+
+
+// Display & Box Model
+// Positioning
+// Type 
+// Other

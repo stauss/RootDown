@@ -1,0 +1,266 @@
+//========================================================================// 
+                                                                         //
+    // _variables.scss                                                  //     VARIABLES
+                                                                       //
+//====================================================================//
+
+
+
+
+
+
+
+//=====//=====//   Image Vars  //=====//=====//
+
+$imagedir:'../img/'; // Image Path
+
+//===========================================// END IMAGE VARIABLES
+
+
+
+//=====//=====//   Wireframe Vars  //=====//=====//
+
+$wire4 : #333;
+$wire3 : #666;
+$wire2 : #999;
+$wire1 : #ccc;
+
+$bodyBg : #e0e0e0;
+
+$btnColor: #4b4b4b;
+$btnCopy: #fff;
+
+
+// Test
+$b : #bada55;
+
+//=====//=====//=====//=====//=====//=====//=====||-----[ END WIRE FRAME VARS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// greyscale
+
+$black 			: rgb(0,0,0);
+$darkgrey 		: lighten($black, 25%);
+$grey 			: lighten($black, 50%);
+$lightgrey 		: lighten($black, 75%);
+$lightergrey 	: lighten($black, 90%);
+$white 			: #fff;
+
+// 1. ROOT 					==============================
+
+$bodycolor : $white;
+$textcolor : #000;
+
+// 2. TYPOGRAPHY 			==============================
+
+$basefont : 'Lato', sans-serif;
+
+$basefontsize : 16px;
+$baselineheight : 26px;
+$baseheadingfont : 'Lato', sans-serif;
+$baseheadinglineheight : 50px;
+$baseheadingfontweight : bold;
+$baseheadingfontcolor : #000;
+$baseheadingmargin: 0px;
+
+$altfont : Cambria, Georgia, Times, "Times New Roman";
+$altstyle : italic;
+$altlineheight : 1.35em;
+
+$codefont : Monaco, Courier New, monospace;
+
+// 3. COLOUR 				==============================
+
+$basecolor 		: rgb(45,53,62);
+$compcolor 		: adjust-hue($basecolor, 180);
+$bordercolor    : lighten($basecolor, 60%);
+
+
+
+
+
+
+
+
+
+
+
+// Colour Palettes
+
+$yellow :#000;
+$headblack :#000;
+
+$searchgrey : #000;
+
+$inputgrey :#000;
+$inputltgrey:#000;
+$submitgrey:#000;
+$jsgrey:#000;
+$buttongrey:#000;
+$exitbtn:#000;
+$mdnbase:#000;
+
+// Border Colors 
+
+$darkborder:#000;
+$lightborder:#000;
+$inputborder:#000;
+
+
+
+
+
+
+$turquoise:#000;
+$dark-turquoise:#000;
+
+$green:#000;
+$dark-green:#000;
+
+$blue:#000;
+$dark-blue:#000;
+
+$purple: #000;
+$dark-purple:#000;
+
+$midnight:#000;
+$dark-midnight:#000;
+
+$yellow:#000;
+$dark-yellow:#000;
+
+$gray:#000;
+$dark-gray:#000;
+
+$bar:#000;
+
+// Links
+
+$linkcolor 		    : #000;
+$linkcolorhover 	: #000;
+$linkcolorvisited   : #000;
+$linkcolorfocus 	: #000;
+
+// colour palettes
+
+$alertcolor 	: #000;
+$errorcolor 	: #000;
+$infocolor 		: #000;
+$inverscolor 	: #000;
+$successcolor 	: #000;
+$warningcolor 	: #000;
+
+// 4. OTHER THINGS 				==============================
+
+
+// alert
+
+$alertbordercolor	: #000;
+$alertborderwidth 	: 1px;
+$alertborderstyle 	: solid;
+$alerttext			: #000;
+
+// alert-error
+$alerterrorcolor 	: #000;
+$alerterrorborder  	: #000;
+$alerterrortext 	: #000;
+
+// alert-info
+$alertinfocolor 	: #000;
+$alertinfoborder  	: #000;
+$alertinfotext 		: #000;
+
+// alert-inverse
+$alertinversecolor 	: #000;
+$alertinverseborder : #000;
+$alertinversetext 	: #000;
+
+// alert-success
+$alertsuccesscolor 	: #000;
+$alertsuccessborder : #000;
+$alertsuccesstext 	: #000;
+
+// alert-warning
+$alertwarningcolor 	: #000;
+$alertwarningborder : #000;
+$alertwarningtext 	: #000;
+
+
+// buttons
+
+$buttonbackground 	: #000;
+$buttonbordercolor 	: #000;
+$buttonbottombordercolor : #000;
+$buttoncolor 		: #000;
+$buttonborderwidth	: 1px;
+$buttonborderstyle	: solid;
+
+
+// Calebs Btn Styles
+$mainBtnBgColor :#000;
+$mainBtnColor  :#000;
+$mainBtnHover :#000;
+$mainBtnClick :#000;
+$mainBtnColorDisable  : #000;
+
+$secBtnBgColor :#000;
+$secBtnColor  : #000;
+$secBtnHover :#000;
+$secBtnClick :#000;
+
+
+
+
+
+
+// boxes (well)
+
+$wellbackground		: #000;
+$wellbordercolor	: #000;
+$wellborderwidth	: 1px;
+$wellborderstyle	: solid;
+$wellshadow			: #000;
+$wellshadowblur		: 10px;
+
+// tables
+
+$tablebackground 	: transparent;
+$tablestripe 		: #000; //lighten($basecolor, 60%);
+$tablehover 		: #000;
+$tableborder 		: #000;
+$tableborderwidth	: 1px;
+$tableborderstyle	: solid;
+
+// forms
+
+$inputbackground 	: #000;
+$inputborder 		: #000;
+$inputborderwidth	: 1px;
+$inputborderstyle	: solid;
+$inputhover 		: #000;
+$inputfocus 		: #000;
+$placeholdercolor 	: #000;
+
+$nonactivetype :#000;;
+
+
+
+$baseline : $baselineheight;
+$gutterwidth : 24px;
+

@@ -1,0 +1,92 @@
+//========================================================================// 
+                                                                         //
+    // _buttons.scss                                                    //     BUTTONS
+                                                                       //
+//====================================================================//
+
+
+
+
+
+
+/*
+  -------------------------------------------------- 
+  * Btn Mixins
+  -------------------------------------------------- 
+
+  1  | Font Mixin
+  
+  2  | Simple Animation Mixin
+
+  3  | Border Radius mixin
+
+  4  | IE7 inline-block hack
+*/
+
+
+
+
+
+// main buttons
+.btn {
+  @include font-size(12); //----- 1
+  @include simpleTransAni(background-color, 0.2s, linear); //----- 2
+  @include border-radius(6px, 6px, 6px, 6px); //----- 3
+
+  display: inline-block;
+
+  *display:inline; //----- 4
+  *zoom:1;         //----- 4
+
+  padding: 6px 11px 6px;
+  margin-bottom: 0;
+
+  font: {family:$basefont;}
+  line-height: $baselineheight;
+  text-align: center;
+  vertical-align: middle;
+  color: $btnCopy !important;
+
+  cursor: pointer;
+
+  background-color: $btnColor;
+}
+
+// disable underline on hover
+.btn:hover {
+  text-decoration: none;
+}
+
+
+// share btn 
+.share {
+}
+
+// icon inside share btn
+.share i {
+  padding: 0 8px 0 0;
+}
+
+
+
+
+
+//================|   Global Button  |================//
+
+.g-cta {
+  background-color: $mainBtnBgColor;
+  color: $buttoncolor;
+
+  &:visited, &:hover {
+    color: $buttoncolor;
+    text-decoration: none;
+    background-color:$mainBtnHover;
+  }
+
+
+  &:active {
+    background: $mainBtnClick;
+    @include simpleTransAni(background-color, 0, linear);
+  }
+
+}

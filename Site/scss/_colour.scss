@@ -1,0 +1,41 @@
+//========================================================================// 
+	                                                                     //
+		// _color.scss                		                            //     Color
+	                                                                   //
+//====================================================================//
+
+
+
+
+//=====//=====//   Color  //=====//=====//
+
+
+
+a {
+	text-decoration:none;
+	color:$linkcolor;
+
+&:visited {color:$linkcolorvisited;}
+
+&:hover {
+	text-decoration:underline;
+	color:$linkcolorhover;
+}
+
+&:focus {color:$linkcolorfocus;}
+
+&:hover,&:active {outline:0;}
+
+}
+
+//::-moz-selection {
+//	background-color:$selectioncolor;
+//	color:$basecolor;
+//	text-shadow:none;
+//}
+//
+//::selection {
+//	background-color:$selectioncolor;
+//	color:$basecolor;
+//	text-shadow:none;
+//}

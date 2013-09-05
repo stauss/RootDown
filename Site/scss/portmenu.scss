@@ -1,0 +1,198 @@
+//========================================================================// 
+	                                                                     //
+		// _mnav.scss                		                            //     MOBILE NAV
+	                                                                   //
+//====================================================================//
+
+
+
+/*
+	-------------------------------------------------- 
+	* gWrap | pageWrap | pagePush
+	-------------------------------------------------- 
+
+	1  | gWrap > center wrap element
+	
+	2  | pageWrap > full body wrap
+
+	3  | pagePush > pushes the site to the right when mobile nav is open
+*/
+
+
+.gWrap,    //----- 1
+.pageWrap, //----- 2
+.pagePush  //----- 3
+{  
+	height: 100%;
+}
+
+// Global Wrap
+.gWrap {
+	overflow-y: scroll;
+
+	background-color: #e1e1e1;
+}
+
+// gWrap inner emulates fixed pos of the menu
+.gWrap,
+.gWrapInner {
+
+	position: relative;
+}
+
+// Wraps the full page
+.pageWrap {
+	overflow: hidden;
+
+	position: relative;
+}
+
+// Pushes page when nav is open
+.pagePush {
+	height: 100%;
+
+	position: relative;
+	left: 0;
+	z-index: 99;
+	
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
+}
+
+.pagePush::after {
+	content: '';
+	width: 0;
+	height: 0;
+
+	position: absolute;
+	top: 0;
+	right: 0;
+
+	background: rgba(0,0,0,0.2);
+
+	opacity: 0;
+
+	-webkit-transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+	transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+}
+
+.mMenuOpen .pagePush::after {
+	width: 100%;
+	height: 100%;
+
+	opacity: 1;
+
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+}
+
+//-------------------------------------------------| Mobile Nav *
+.mNav {
+	width: 300px;
+	height: 100%;
+	visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 100;
+
+	background: $wire2;
+
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.mNav::after {
+	content: '';
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+
+	position: absolute;
+	top: 0;
+	right: 0;
+
+	background: rgba(0,0,0,0.2);
+
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+}
+
+
+.mMenuOpen .mNav::after, {
+	width: 0;
+	height: 0;
+	opacity: 0;
+
+	-webkit-transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+	transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+}
+
+// Mobile nav conent styles
+// H2 in mobile will be used for branding
+.mNav h2 {
+	padding: 1em;
+	margin: 0;
+
+	color: rgba(0,0,0,0.4);
+	text-shadow: 0 0 1px rgba(0,0,0,0.1);
+	font-weight: 300;
+	font-size: 2em;
+}
+
+// Mobile nav links
+.mNav ul li a {
+	display: block;
+	padding: 1em 1em 1em 1.2em;
+
+	color: #f3efe0;
+	text-transform: uppercase;
+	text-shadow: 0 0 1px rgba(255,255,255,0.1);
+	letter-spacing: 1px;
+	font-weight: 400;
+
+	outline: none;
+	box-shadow: inset 0 -1px rgba(0,0,0,0.2);
+
+	-webkit-transition: background 0.3s, box-shadow 0.3s;
+	transition: background 0.3s, box-shadow 0.3s;
+}
+
+// mobile links on hover / mobile click
+.mNav ul li a:hover {
+	text-decoration: none;
+	background: rgba(0,0,0,0.2);
+	box-shadow: inset 0 -1px rgba(0,0,0,0);
+	color: #fff;
+}
+
+// Slide effect when class is added 
+.mMenuSlide.mMenuOpen .pagePush {
+	-webkit-transform: translate3d(300px, 0, 0);
+	transform: translate3d(300px, 0, 0);
+}
+
+// Pushes page when nav is open
+.mMenuSlide.mNav {
+	z-index: 1;
+
+	-webkit-transform: translate3d(50%, 0, 0);
+	transform: translate3d(50%, 0, 0);
+}
+
+// add visible when the nav is open to the mobile nav
+.mMenuSlide.mMenuOpen .mMenuSlide.mNav {
+	visibility: visible;
+
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
+// Fallback example for browsers that don't support some css3 properties / no JS fallback
+.no-csstransforms3d .pagePush,
+.no-js .pagePush {
+	padding-left: 300px;
+}

@@ -1,0 +1,138 @@
+//========================================================================// 
+	                                                                     //
+		// _grid.scss                		                            //     GRID
+	                                                                   //
+//====================================================================//
+
+
+
+.full-wrap {
+	display:block;
+	float:left;
+	height:auto; 
+	width:100%;
+	padding:0px 1%;
+}
+
+/* Grid Full Wrapper */
+.full-wrap:before,
+.full-wrap:after {content:"";display:table;}
+.full-wrap:after {clear:both;}
+.full-wrap {zoom:1; /* For IE 6/7 (trigger hasLayout) */}
+
+
+/*  GRID COLUMN SETUP   ==================================================================== */
+
+.grid-col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+
+.grid-col:first-child {margin-left: 0;} /* all browsers except IE6 and lower */
+
+.grid-col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+
+
+/* 2 col */
+.col2-2 {width: 100%;}
+.col1-2 {width: 49.2%;}
+
+/* 3 col */
+.col3-3 {width: 100%;}
+.col2-3 {width: 66.1%;}
+.col1-3 {width: 32.2%;}
+
+/* 4 col */
+.col4-4 {width: 100%;}
+.col3-4 {width: 74.6%;}
+.col2-4 {width: 49.2%;}
+.col1-4 {width: 23.8%;}
+
+/* 5 col */
+.col5-5 {width: 100%;}
+.col4-5 {width: 79.68%;}
+.col3-5 {width: 59.36%;}
+.col2-5 {width: 39.04%;}
+.col1-5 {width: 18.72%;}
+
+/* 6 col */
+.col6-6 {width: 100%;}
+.col5-6 {width: 83.06%;}
+.col4-6 {width: 66.13%;}
+.col3-6 {width: 49.2%;}
+.col2-6 {width: 32.26%;}
+.col1-6 {width: 15.33%;}
+
+/* 7 col */
+.col7-7 {width: 100%;}
+.col6-7 {width: 85.48%;}
+.col5-7 {width: 70.97%;}
+.col4-7 {width: 56.45%;}
+.col3-7 {width: 41.92%;}
+.col2-7 {width: 27.42%;}
+.col1-7 {width: 12.91%;}
+
+/* 8 col */
+.col8-8 {width: 100%;}
+.col7-8 {width: 87.3%;}
+.col6-8 {width: 74.6%;}
+.col5-8 {width: 61.9%;}
+.col4-8 {width: 49.2%;}
+.col3-8 {width: 36.5%;}
+.col2-8 {width: 23.8%;}
+.col1-8 {width: 11.1%;}
+
+/* 9 col */
+.col9-9 {width: 100%;}
+.col8-9 {width: 88.71%;}
+.col7-9 {width: 77.42%;}
+.col6-9 {width: 66.13%;}
+.col5-9 {width: 54.84%;}
+.col4-9 {width: 43.55%;}
+.col3-9 {width: 32.26%;}
+.col2-9 {width: 20.97%;}
+.col1-9 {width: 9.68%;}
+
+/* 10 col */
+.col10-10 {width: 100%;}
+.col9-10 {width: 89.84%;}
+.col8-10 {width: 79.68%;}
+.col7-10 {width: 69.52%;}
+.col6-10 {width: 59.36%;}
+.col5-10 {width: 49.2%;}
+.col4-10 {width: 39.04%;}
+.col3-10 {width: 28.88%;}
+.col2-10 {width: 18.72%;}
+.col1-10 {width: 8.56%;}
+
+/* 11 col */
+.col11-11 {width: 100%;}
+.col10-11 {width: 90.7%;}
+.col9-11 {width: 81.47%;}
+.col8-11 {width: 72.24%;}
+.col7-11 {width: 63.01%;}
+.col6-11 {width: 53.78%;}
+.col5-11 {width: 44.55%;}
+.col4-11 {width: 35.32%;}
+.col3-11 {width: 26.09%;}
+.col2-11 {width: 16.86%;}
+.col1-11 {width: 7.63%;}
+
+/* 12 col */
+.col12-12 {width: 100%;}
+.col11-12 {width: 91.46%;}
+.col10-12 {width: 83%;}
+.col9-12 {width: 74.54%;}
+.col8-12 {width: 66.08%;}
+.col7-12 {width: 57.62%;}
+.col6-12 {width: 49.16%;}
+.col5-12 {width: 40.7%;}
+.col4-12 {width: 32.24%;}
+.col3-12 {width: 23.78%;}
+.col2-12 {width: 15.32%;}
+.col1-12 {width: 6.86%;}

@@ -1,0 +1,196 @@
+<!doctype html>
+
+<!-- HTML5 Boilerplate -->
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+
+	<title>This is an awesome title</title>
+
+	<meta name="description" content="Here is the description">
+	<meta name="author" content="Summit Projects">
+
+	<!-- Mobile Default Settings -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+   	<meta name="viewport" content="width=device-width, initial-scale=1" user-scalable="no">
+    <meta http-equiv="cleartype" content="on">
+
+	<!-- Geo Location Meta Tag | Generator http://geo-tag.de/generator/en.html -->
+	<meta name="geo.region" content="US-OR" />
+	<meta name="geo.placename" content="Hood River" />
+	<meta name="geo.position" content="45.70896;-121.512487" />
+	<meta name="ICBM" content="45.70896, -121.512487" />
+
+	<!--[if (lt IE 9) & (!IEMobile)]>
+	<script src="js/selectivizr-min.js"></script>
+	<![endif]-->
+
+	<!-- Icons -->
+
+	<!-- 144x144 -->
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="app-icons/icon-72@2x.png">
+
+	<!-- 114x114 -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="app-icons/icon@2x.png">
+
+    <!-- 72x72 -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="app-icons/icon-72.png">
+
+    <!-- 57x57 -->
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="app-icons/icon.png">
+
+    <!-- Main Icon -->
+    <link rel="apple-touch-icon-precomposed" href="app-icons/icon.png">
+
+	<!-- 16x16 -->
+	<link rel="shortcut icon" href="/favicon.ico">
+
+	<!-- 32x32 -->
+	<link rel="shortcut icon" href="/favicon.png">
+
+	<!--iOS Prefs -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="apple-mobile-web-app-title" content="320 and Up">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+	<meta name="msapplication-TileImage" content="img/apple-touch-icon-144x144-precomposed.png">
+	<meta name="msapplication-TileColor" content="#000">
+	<meta http-equiv="cleartype" content="on">
+
+	<!-- Web Fonts -->
+	<!--<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>-->
+
+	<!-- For all browsers -->
+	<!--<link rel="stylesheet" href="css/style.css">-->
+
+	<!-- JavaScript -->
+	<!--<script src="js/modernizr-2.5.3-min.js"></script>-->
+
+	<style>
+		
+		pre {
+		 white-space: pre-wrap;       /* css-3 */
+		 white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+		 white-space: -pre-wrap;      /* Opera 4-6 */
+		 white-space: -o-pre-wrap;    /* Opera 7 */
+		 word-wrap: break-word;       /* Internet Explorer 5.5+ */
+		}
+		
+	</style>
+
+
+</head>
+<body>
+
+	<h1>CSS Coding Style Rules</h1>
+
+	<h2>Class Names for styling</h2>
+
+	<em>ID's are not to be used for any styling | unless absolutly nessicary. This being said ALWAYS use classes UNLESS all else fails. ID's are a absolute LAST RESORT and you should review your CSS Code before you even attempt to use an ID</em>
+
+	<p></p>
+
+	<ul>
+		<li>All global element classes should begin with a lowercase g. <span>Examples: .gHeader | .gWrap | .gFooter</span></li>
+	</ul>
+
+	<ul>
+		<li>.fullWrap</li>
+		<li>.full</li>
+		<li>.half</li>
+		<li>.quarter</li>
+	</ul>
+
+	<ul>
+		<li>.mOnly is specifed for elements that are ONLY designed to appear on a mobile device</li>
+		<li>.nonM is specifed for elements that are NOT designed to appear on a mobile device</li>
+	</ul>
+	
+	<p class="rule">SCSS document name declaration should always be stated at the top of the SCSS file. First comment line (Code Line 1) will start with regular SCSS comment syntax's // and is followed by 50 equal signs ( = ) and then two // and then a hard return. Second comment line (Code Line 2) will have 71 spaces followed by two // to ensure the diagonal code line proceeds down to the next code line. Third comment line (Code Line 3) should have 5 spaces followed by two // followed by another space followed by the SCSS document name .scss. For example <em>// pagename.scss</em>. The page name should be followed by a hard return. Forth comment line (Code Line 4) will have 69 spaces followed by two // followed by 5 hyphens ( - ) next a square open bracket ( [ ) followed by a space then the page name in all caps and next a hard return. Fifth comment line (Code Line 5) will start with two // followed by 46 equal sign's ( = ) then two // to complete the document name declaration. If for some reason you need to further explain the page in detail use the muliple line comment rule after 4 hard returns after the document name declaration.</p>
+	
+	<h2>Document Name Declaration</h2>
+	
+	<code><pre>
+//======================================================================// 
+                                                                       //
+     // examplepagename.scss             		                           
+                                                                     //-----[ EXAMPLE PAGE NAME
+//==================================================================//
+	</pre></code>
+
+	<h2>Document Name Declaration Comments</h2>
+
+	<p>describe the comments commentting the page / instructions about the scss doc</p>
+
+<code><pre>
+/*
+    
+    This file defines page specific elements ( home | about | classes ) ect.
+
+*/
+</code></pre>
+
+
+	<h2>Multiple line comments</h2>
+	
+	<p class="rule">Multiple line comments start with the SCSS multiple line comment syntax's ( /* ). After the multiple line comment is declared a hard return is necessary to bring you down to comment line 2. On comment lines in-between the SCSS multiple line comment characters all text should be indented with a tab (or 4 spaces if your tabs are not set to 4 spaces). On line comment lines 2-4 of the multiple line comment there needs to be a title to declare what you are commenting about. this title section should be as followed, when tabbed in use 50 hyphens ( - ) to start the title section. Then add a hard return and tab in if not already tabbed to the correctly specified multiple line comment indention. Next add a star character ( * ) followed by a space and next the title in all caps. after the title hard return down to the next line, tab if not done so already and follow tab by 50 hyphens ( - ). This will end the title section of the multiple line comment. Each comment line within a multiple line comment should have a hard return before and after. next the mutiple line comment is closed with regular SCSS syntacts ( */ ). This completes the mutiple line comment.</p>
+
+
+
+<code><pre>
+/*
+
+	-------------------------------------------------- 
+	* Title before Number Syentacts
+	-------------------------------------------------- 
+
+	1  | This page is created for all global design elements. ( Header | Footer | Schedule )
+	
+	2  | I think that this is a good example of the number syntacts.
+	
+	3  | This is a thrid option in the list here.
+
+*/
+</pre></code>
+
+	<h2>Multiple numbered line comments</h2>
+	
+	<p class="rule">Multiple numbered line comments start with the SCSS multiple line comment syntax's ( /* ). After the multiple line comment is declared a hard return is necessary to bring you down to comment line 2. On comment lines in-between the SCSS multiple line comment characters all text should be indented with a tab (or 4 spaces if your tabs are not set to 4 spaces). On line comment lines 2-4 of the multiple line comment there needs to be a title to declare what you are commenting about. this title section should be as followed, when tabbed in use 50 hyphens ( - ) to start the title section. Then add a hard return and tab in if not already tabbed to the correctly specified multiple line comment indention. Next add a star character ( * ) followed by a space and next the title in all caps. after the title hard return down to the next line, tab if not done so already and follow tab by 50 hyphens ( - ). This will end the title section of the multiple line comment. Each numbered comment line within a multiple numbered line comment should have a hard return before and after. Also each line should start with a number then followed by 2 spaces, then a vertical bar ( | ), a space and then the comment.</p>
+
+<code><pre>
+/*
+	-------------------------------------------------- 
+	* Title before Number Syentacts
+	-------------------------------------------------- 
+
+	1  | This page is created for all global design elements. ( Header | Footer | Schedule )
+	
+	2  | I think that this is a good example of the number syntacts.
+	
+	3  | This is a thrid option in the list here.
+
+*/
+</pre></code>
+
+
+		<h2>Code sections</h2>
+
+<code><pre>
+
+//=====//=====//   Code Section Titles   //=====//=====//
+
+//=====//=====//=====//=====//=====//=====//=====||-----[ END THIS CODE SECION
+
+</pre></code>
+
+
+</pre></code>
+
+</body>
+</html>

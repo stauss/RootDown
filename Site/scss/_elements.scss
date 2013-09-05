@@ -1,0 +1,470 @@
+//======================================================================// 
+                                                                       //
+     // _elements.scss              		                           
+		                                                     		 //-----[ ELEMENTS 
+//==================================================================// 
+
+   
+       
+/*  
+    
+    This file defines global elements
+    All global parent elements should have global name syntacts EX: gName
+
+*/
+
+
+
+//==================================================================
+//	Global Elements
+//==================================================================
+
+
+
+
+//-------------------------------------------------| Global Wrap *
+.gWrap {
+	// display: block;
+	// width: 100%;
+	// max-width: 1240px;
+	// height: auto;
+	// margin: 0 auto;
+}
+
+
+
+.gContent {
+	display: block;
+	max-width: 1240px;
+	padding: 0;
+	margin: 0 auto;
+}
+
+//-------------------------------------------------| Global Header *
+.gHeader {
+	display: block;
+	float: left;
+	overflow: hidden;
+	width: 100%;
+	height: 50px;
+
+	position: relative;
+	
+	background-color: $white;
+}
+
+// Wraps top part of header ( Logo / Social )
+.brandWrap {
+
+	position: relative;
+}
+
+// global logo inside of header
+.brand {
+	display: block;
+
+	// !!!EDIT take this out after real logo is placed
+	text-align: right;
+	padding: 5px 5% 0 5%;
+}
+
+
+
+//-------------------------------------------------| Global Nav *
+// global nav | nav.gNav
+.gNav {
+	display: block;
+	min-height: 75px;
+}
+
+
+
+/*
+	-------------------------------------------------- 
+	* Global Nav ul, li, a
+	-------------------------------------------------- 
+
+	1  | Position absolute to make children els realative to this
+	
+	2  | Give width of 16.6666667% to all list items for fuild width.
+	   | Width of the li is created by dividing the width of the ul (100%) by the amount of li inside (6)
+	   | 100 / 6 gives us our width of our list items | width = 16.6666667%
+	   --------------------------------------------------------------------------------------------------
+
+	3  | Make list items realative to the ul so you can vertically center <a> els inside
+
+	4  | Posistion <a> els absolute and give them a top postion of 25% and this will center them
+*/
+
+// nav ul
+.gNav ul {
+	display: block;
+	width: 100%;
+	max-width: 1200px;
+	height: 75px;
+
+	position: absolute; //----- 1
+}
+
+// nav list items
+.gNav ul li {
+	display: block;
+	float:left;
+	width: 16.6666667%; //----- 2
+	height: 100%;
+
+	position: relative; //----- 3
+}
+
+// nav links
+.gNav ul li a {
+	display:block;
+	float: left;
+	width: 100%;
+	height: 50%;
+	padding: 5px 0;
+
+	position: absolute;
+	top: 25%; //----- 4
+
+	text-align: center;
+
+	border-right: 1px solid $wire3;
+}
+
+// add border to first item in list (home link)
+.gNav ul li:first-child a {
+	border-left: 1px solid $wire3;
+}
+
+
+
+//-------------------------------------------------| Global Mobile Nav Icon
+
+//------------------------------------------------------
+// Mobile nav styles can be found in the _menu.scss file
+//------------------------------------------------------
+
+// nav icon wrap <a> 
+.navIcon {
+	@include border-radius(6px, 6px, 6px, 6px);
+
+	display: block;
+	padding: 3px 9px 3px 9px;
+
+	position: absolute;
+	top: 8px;
+	left: 5%;
+
+	background-color: $wire3;
+	cursor: pointer;
+
+	font-size: 1.2em;
+	text-align: center;
+}
+
+// nav icon <i>
+.navIcon i {
+	color: #fff;
+}
+
+// disable underline on hover
+.navIcon:hover {
+	text-decoration: none;
+}
+
+
+
+//-------------------------------------------------| Global Hero *
+// Hero Wrap
+.gHeroWrap {
+	display:block;
+	width: 100%;
+	max-width: 1200px;
+	min-height: 100%;
+	margin: 0 auto;
+}
+
+// Global full height hero
+.gHero {
+	display:block;
+	float: left;
+	width:100%;
+	height:100%;
+
+	background-color: $wire1;
+}
+
+
+
+//-------------------------------------------------| Global Touts *
+// Wrap for global touts
+.gToutWrap {
+	display:block;
+	float: left;
+	width:100%;
+	height:100%;
+	margin: -40px 0 0 0;
+}
+
+// All sections inside of global tout wrap
+.gToutWrap section{
+	display: block;
+	float: left;
+	padding: 5%;
+}
+
+// tout padding wrap | used for mobile layout*
+.gToutPad {
+	display: block;
+	float: left;
+	overflow: visible;
+	width: 100%;
+	padding: 5%;
+
+}
+
+// Global specials tout
+.gSpecails {
+	display: block;
+	float: right;
+	width: 100%;
+	min-height: 150px;
+
+	background-color: $wire2;
+}
+
+
+
+//-------------------------------------------------| Global Schedule *
+// Global schedule wrap | wraps the schedule
+.gShedWrap {
+	display: block;
+	float: left; 
+	width: 100%;
+}
+
+// Global schedule tout
+.gSchedule {
+	display: block;
+	float: left;
+	width: 100%;
+	height: 500px;
+
+	background-color: $white;
+}
+
+// buttons within global shedule wrap
+.gSchedule .btn.mOnly {
+	width: 48%;
+	margin: 10px 0 0 0;
+}
+
+// sign up btn button
+.gSchedule .signUp.mOnly {
+	width: 100%;
+}
+
+
+
+//-------------------------------------------------| Global Footer *
+// global footer
+.gFooter {
+	display: block;
+	float: left;
+	overflow: hidden;
+	width: 100%;
+	// max-height: 200px;
+
+	position: relative;
+
+	background-color: $wire1;
+}
+
+// full width sections inside global footer
+.gFooter .full {
+	padding: 0;
+}
+
+// Footer Branding | top section of footer with logo & social
+.footBrand {
+	display: block;
+	float: left;
+	// width: 100%;
+	// height: 155px;
+
+	border-bottom: 1px solid $white
+}
+
+// padding for elements inside the footer
+.footPad, .footNav, .footLegal {
+	padding: 5%;
+}
+
+//Power for the gorge slogan
+.footPad h1 {
+	min-height: 100px;
+
+	text-align: center;
+}
+
+// Mobile Logo & back to top btn
+.footLogo {
+	display: block;
+	float: left;
+	width: 100%;
+	min-height: 45px;
+
+	background-color: $wire2;
+}
+
+// element that wraps mobile footer logo
+.footLogo h1 {
+	display: block;
+	float: left;
+
+}
+
+// back to top btn
+.footLogo a {
+	display: block;
+	float: right;
+	min-width: 45px;
+	min-height: 45px;
+
+	font-size: 2em;
+	text-align:center;
+
+	background-color: $white;
+}
+
+// back to top icon
+.footLogo a i {
+	padding: 9px 0 0 0;
+}
+
+// footer nav 
+.footNav {
+	display: block;
+	float: left;
+	width: 100%;
+	padding: 10px 5% 0 5%;
+}
+
+// footer nav list items
+.footNav li {
+	padding: 10px 0;
+
+	border-bottom: $black solid 1px;
+}
+
+// Bottom section of footer with leagal info tel# and socail
+.footContact {
+	display: block;
+	float: left;
+	width: 100%;
+
+	background-color: $wire2;
+}
+
+// Right hand copyright / location / tel#
+.footLegal {
+	display: block;
+	float: left;
+	width: 65%;
+}
+
+// footer social links
+.footSocial {
+	display: block;
+	float: right;
+	width: 50%;
+	height: 45px;
+	padding: 10px 0 0 0;
+}
+
+// social icons list
+.footSocial li {
+	display: block;
+	float: left;
+	overflow: hidden;
+	width: 25%;
+	max-height: 45px;
+}
+
+// social icons
+.footSocial li a{
+	display: block;
+	float: left;
+	width: 100%;
+	height: 100%;
+
+	text-align: center;
+	font-size: 2em;
+}
+
+// remove underline on hover
+.footSocial li a:hover {
+	text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//-------------------------------------------------| NOT ROOT DOWNS CODE 
+
+hr {
+	display : block;
+	margin : 1em 0;
+	padding : 0;
+	height : 1px;
+	border : 0;
+	border-top : 1px solid $bordercolor;
+	border-bottom : 1px solid $white; 
+}
+
+// img
+
+img {
+	max-width : 100%;
+	border-width : 0;
+	vertical-align : middle;
+	-ms-interpolation-mode : bicubic; 
+}
+
+svg:not(:root) {overflow:hidden;}
+
+figcaption {
+	display:block;
+	font-weight:normal;
+	@include font-size(14);
+}
+
+// list-bordered
+
+.list-bordered {
+	list-style-type:none;
+	margin: 0 0 $baselineheight 0;
+	padding: 0;
+
+li {
+	margin-bottom:$baselineheight / 4;
+	padding-bottom:$baselineheight / 4;
+	border-bottom:1px dashed $bordercolor;}
+
+li:last-child {
+	margin-bottom:0;
+	padding-bottom:0;
+	border-bottom-width:0;}
+}

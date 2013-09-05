@@ -1,0 +1,1 @@
+var col=$(".grid-col");$("span",col).html($(".grid-col").width());col.each(function(){var e=$(this),t=$("span").parent();$(window).resize(function(){var e=$(".grid-col").width();$("span",t).html(e)})});

@@ -1,0 +1,321 @@
+//========================================================================// 
+                                                                         //
+    // _forms.scss                                                      //     FROMS
+                                                                       //
+//====================================================================//
+
+
+
+
+//=====//=====//   FOMRS  //=====//=====//
+
+
+input:focus,textarea:focus {outline:0;}
+
+input[type="file"]:focus,
+input[type="radio"]:focus,
+input[type="checkbox"]:focus,
+select:focus {
+@include box-shadow(none); }
+
+form label {
+  display:block;
+  float:left;
+  width:100%;
+}
+
+textarea,input {
+  border: 1px solid #272727;
+  font-size: 14px;
+  padding: 13px 0 14px 10px;
+  position:relative;
+}
+
+/* Submit */
+input[type="submit"] {
+  color:$nonactivetype;
+  padding:13px 15px 14px 35px;
+  margin-left:85px;
+  @include spritePos('sprite.png', 0px -295px);
+  cursor:pointer;
+}
+
+// Wraps search for pos rel. Allows me to position the mag icon as a webfont
+.search-input-wrap {position:relative;}
+
+.seach-input-icon {
+  position:absolute;
+  top:8px;
+  right:15px;
+  color:#aeb3b7;
+  font-weight:200;
+}
+
+.active-search {color:#1abc9c;}
+
+/* Webkit Paceholders */
+textarea::-webkit-input-placeholder, input::-webkit-input-placeholder,
+/* Firefox 18- Place holders */
+textarea:-moz-placeholder, input:-moz-placeholder,
+/* Firefox 19+ */
+textarea::-moz-placeholder, input::-moz-placeholder,
+/* Windows */
+textarea:-ms-input-placeholder, input:-ms-input-placeholder {color: #acb6c0;}
+
+
+/* On Focus Inputs */
+textarea:focus, input:focus, {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none; 
+}
+  
+textarea.input-error, input.input-error, {
+	border-color: #e74c3c;
+  color: #e74c3c;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none; 
+}
+
+textarea:focus.input-error, input:focus.input-error, {
+	-webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+  
+textarea.input-success, input.input-success {
+    color: #2ecc71;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+textarea:focus.input-success, input:focus.input-success {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none; 
+}
+
+input[disabled],
+input[readonly],
+textarea[disabled],
+textarea[readonly] {
+  background-color: $dark-gray;
+  border-color: transparent;
+  color: #41494a;
+  cursor: default; 
+}
+
+
+//=====//=====//   Check Boxes and Radios  //=====//=====//
+
+
+.checkbox, .radio {
+  margin-bottom: 12px;
+  padding-left: 32px;
+  position: relative;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
+  -webkit-backface-visibility: hidden; 
+}
+
+.checkbox:hover, .radio:hover {color: #1abc9c; }
+
+.checkbox input, .radio input {
+    outline: none !important;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    zoom: 1; 
+}
+
+.checkbox.checked .icon, .radio.checked .icon {
+    background-position: -60px -30px;
+    opacity: 1;
+    display: block\9; 
+}
+  
+.checkbox.checked .icon-to-fade, .radio.checked .icon-to-fade {
+    opacity: 0;
+    display: none\9; 
+}
+
+.checkbox.disabled, .radio.disabled {
+	color: #d7dddd;
+	cursor: default; 
+}
+
+.checkbox.disabled .icon, .radio.disabled .icon {
+	opacity: 0;
+	display: none\9; 
+}
+
+.checkbox.disabled .icon-to-fade, .radio.disabled .icon-to-fade {
+    background-position: -30px -60px;
+    opacity: 1;
+    display: block\9; 
+}
+
+.checkbox.disabled.checked .icon, .radio.disabled.checked .icon {
+      background-position: 0 -90px;
+      opacity: 1;
+      display: block\9; 
+}
+
+.checkbox.disabled.checked .icon-to-fade, .radio.disabled.checked .icon-to-fade {
+    opacity: 0;
+    display: none\9; 
+  }
+
+// Fade effect
+.checkbox .icon, .checkbox .icon-to-fade, .radio .icon, .radio .icon-to-fade {
+    background: url("../img/checkbox.png") -90px 0 no-repeat;
+    display: block;
+    height: 20px;
+    left: 0;
+    opacity: 1;
+    position: absolute;
+    top: -1px;
+    width: 20px;
+    -webkit-transition: opacity 0.1s linear;
+    -moz-transition: opacity 0.1s linear;
+    -o-transition: opacity 0.1s linear;
+    transition: opacity 0.1s linear;
+    -webkit-backface-visibility: hidden; 
+}
+
+.checkbox .icon, .radio .icon {
+    opacity: 0;
+    top: 0;
+    z-index: 2;
+    display: none\9; 
+}
+
+// Set Background Image
+.radio .icon, .radio .icon-to-fade {background-image: url("../img/radio.png"); }
+
+
+
+//=====//=====//   Number Input  //=====//=====//
+
+div.custom-number-wrap{
+	position:relative;
+	display:block;
+	float:left;
+}
+
+div.custom-number-wrap input {
+	text-align:center;
+  width:60px;
+  text-indent:-10px;
+}
+
+span.custom-number-button {
+	display:block;
+	cursor:pointer;
+	position:absolute;
+	max-width:50px;
+	height:30px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	background-color: #1abc9c;
+	color:#fff;
+	font-size:20px;
+}
+
+.custom-number-button.inc {
+	padding:1px 10px 0px 10px;
+	top:5px;
+	right:-15px;
+}
+
+.custom-number-button.dec {
+	padding:0px 12px 0px 12px;
+	top:5px;
+	left:-15px;
+}
+
+
+
+
+//=====//=====//   Custom Drop Down  //=====//=====//
+
+
+.select {
+  display:block;
+  float:left;
+  position:relative;
+  width:100%;
+  min-height:42px;
+  cursor:pointer;
+}
+
+.styledSelect {
+  position:absolute;
+  display:block;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  height:46px;
+  border: 1px solid #272727;
+  padding: 13px 0 0px 10px;
+  max-width:220px;
+  text-indent: 1px;
+  position:relative;
+  background-color:$inputgrey;
+}
+
+.styledSelect span {
+  display:block;
+  float:left;
+  width:200px;
+  color:$nonactivetype;
+  text-indent: 1px;
+  margin:-4px 0px 0px 0px;
+  text-transform:uppercase;
+  @include spritePos('sprite.png', 166px -173px);
+}
+
+
+
+.options {
+  display:none;
+  width:212px;
+  position:absolute;
+  top:70px;
+  right:0;
+  left:0px;
+  z-index:999;
+  margin:0 0;
+  padding:0 0;
+  list-style:none;
+  border-top: none;
+  background-color:$inputgrey;
+  color:#5d5d5d;
+  border: 1px solid #272727;
+
+}
+
+.options.show-custom-dd {
+  opacity:1;
+  -webkit-backface-visibility: hidden; 
+}
+
+.options li {
+  padding:0 6px;
+  margin:0 0;
+  padding:0 10px;
+}
+
+.options li:hover {
+  background-color:$yellow;
+  color:$jsgrey;
+}
+
+.non-active {
+  color:$nonactivetype;
+}

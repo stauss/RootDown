@@ -261,8 +261,34 @@
 
 
 						<!-- Specials Tout | This is the global specials tout it promotes current yoga specials -->
-						<section class="module gTout gSpecails half">
-							<h2>This is the specials tout</h2>
+						<section class="module gTout prices half">
+							
+							<!-- Left Column Prices-->
+							<section class="half">
+								<h2>Visitor Passes</h2>
+								<span class="price">$15 - 1 class</span>
+								<h2>Private Classes</h2>
+								<span class="price">$65 - Single Private</span>
+								<em>(1-2 students)</em>
+
+								<span class="price">$85 - Single Private</span>
+								<em>(3-4 students)</em>
+
+								<span class="price">$100 - Single Private</span>
+								<em>(5+ students)</em>
+							</section>
+							<!-- !!!END LEFT COLUMN PRICES -->
+
+
+							<!-- Right Column Prices-->
+							<section class="half">
+								<h2>Membership Rates</h2>
+								<span class="price">Sudents<em> $30 - 30 day</em></span>
+								<span class="price">Limited<em> $45 - 5 classes</em><em> $80 - 10 classes</em></span>
+								<span class="price">Unlimited<em> $95 - 1 month</em></span>
+							</section>
+							<!-- !!!END RIGHT COLUMN PRICES -->
+
 						</section>
 						<!-- !!!END SPECIALS TOUT -->
 						
@@ -274,107 +300,122 @@
 
 
 
-				<!-- ============================= | TEACHERS | tea stands for teachers | ============================= -->
-				<section class="fullWrap tea">
+				<!-- ============================= | CLASSES | ============================= -->
+				<section class="fullWrap classesWrap">
 
 
 
-						<!-- About Tout -->
-						<section class="full tout">
-							<h2>Learn about our <span>teachers</span></h2>
+						<!-- Classes -->
+						<section class="full">
 
-							<!-- Teacher Nav -->
-							<nav class="teaLinks nonM">
-								<ul>
-									<li><a href="#">Angela Logan</a></li>
-									<li><a href="#">Victoria Williams</a></li>
-									<li><a href="#">Chelsey Moss</a></li>
-									<li><a href="#">Eleanor Edgerly</a></li>
-								</ul>
-							</nav>
-							<!-- !!!END TEACHER NAV -->
+							<!-- Row | this creates a "row" wrap for the classes -->
+							<div class="row">
+
+								<!-- Our Classes -->
+								<section class="classWrap quarter ourClasses" style="background-color:#ccc">
+									<h2>Our Classes</h2>
+									<p>Cras mattis consectetur purus sit amet fermentum. Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.</p>
+									<a href="#" class="btn share">Share</a>
+								</section>
+								<!-- !!!END OUR CLASSES -->
+
+								<!-- Basics -->
+								<!--- REMOVE ALL INLINE STYLES | THESE ARE FOR WIRES ONLE -->
+								<section class="classWrap quarter" style="background-color:#999">
+									<h2>Basics</h2>
+									<p>Cras mattis consectetur purus sit amet fermentum. Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.</p>
+								</section>
+								<!-- !!!END BASICS -->
+
+
+								<!-- Basics -->
+								<section class="classWrap quarter" style="background-color:#ccc">
+									<h2>Basics</h2>
+									<p>Cras mattis consectetur purus sit amet fermentum. Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.</p>
+								</section>
+								<!-- !!!END BASICS -->
+
+
+								<!-- Basics -->
+								<section class="classWrap quarter" style="background-color:#999">
+									<h2>Basics</h2>
+									<p>Cras mattis consectetur purus sit amet fermentum. Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.</p>
+								</section>
+								<!-- !!!END BASICS -->
 							
-							<div class="teaPicNav nonM">
-								<span class="popUp">Click through Victoria's Favorite yoga Poses</span>
-								<a href="#" class="teaLeft">Left Arrow</a>
-								<a href="#" class="teaRight">Right Arrow</a>
 							</div>
-						</section>
-						
-						<!-- Angela -->
-						<section id="angela" class="full tout">
-							<section class="teaWrap">
-								<h3>Angela Logan</h3>
-								<p>Cras mattis consectetur purus sit amet fermentum. Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.</p>
-								<p>Cras mattis consectetur purus sit amet fermentum. Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.</p>
-								<a href="#" class="btn share nonM">Share</a>
-								<a href="#" class="btn learnMore">Read Posts</a>
-							</section>
-						</section>
-						<!-- !!!END ANGELA -->
-
-						
-						<!-- Victoria -->
-						<!-- !!!EDIT background inline styles are only for wire purposes -->
-						<section id="victoria" class="full tout" style="background-color: #fff;">
-							<section id="victoria" class="teaWrap">
-								<h3>Victoria Williams</h3>
-								<p>Cras mattis consectetur purus sit amet fermentum. Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.</p>
-								<p>Cras mattis consectetur purus sit amet fermentum. Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.</p>
-								<a href="#" class="btn share nonM">Share</a>
-								<a href="#" class="btn learnMore">Read Posts</a>
-							</section>
-						</section>
-						<!-- !!!END VICORIA -->
+							<!-- !!!END ROW -->
 
 
-						<!-- Chelsey -->
-						<section id="chelsey" class="full tout">
-							<section id="chelsey" class="teaWrap">
-								<h3>Chelsey Moss</h3>
-								<p>Cras mattis consectetur purus sit amet fermentum. Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.</p>
-								<p>Cras mattis consectetur purus sit amet fermentum. Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.</p>
-								<a href="#" class="btn share nonM">Share</a>
-								<a href="#" class="btn learnMore">Read Posts</a>
-							</section>
-						</section>
-						<!-- !!!END CHELSEY -->
+							<!-- Row | this creates a "row" wrap for the classes -->
+							<div class="row">
+
+								<!-- Basics -->
+								<section class="classWrap quarter" style="background-color:#999">
+									<h2>Basics</h2>
+									<p>Cras mattis consectetur purus sit amet fermentum. Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.</p>
+								</section>
+								<!-- !!!END BASICS -->
 
 
-						<!-- Eeleanor -->
-						<section id="eleanor" class="full tout" style="background-color: #fff;">
-							<section id="eleanor" class="teaWrap">
-								<h3>Eleanor Edgerly</h3>
-								<p>Cras mattis consectetur purus sit amet fermentum. Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.</p>
-								<p>Cras mattis consectetur purus sit amet fermentum. Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.</p>
-								<a href="#" class="btn share nonM">Share</a>
-								<a href="#" class="btn learnMore">Read Posts</a>
-							</section>
+								<!-- Basics -->
+								<section class="classWrap quarter" style="background-color:#ccc">
+									<h2>Basics</h2>
+									<p>Cras mattis consectetur purus sit amet fermentum. Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.</p>
+								</section>
+								<!-- !!!END BASICS -->
+
+
+								<!-- Basics -->
+								<section class="classWrap quarter" style="background-color:#999">
+									<h2>Basics</h2>
+									<p>Cras mattis consectetur purus sit amet fermentum. Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.</p>
+								</section>
+								<!-- !!!END BASICS -->
+
+
+								<!-- Basics -->
+								<section class="classWrap quarter" style="background-color:#ccc">
+									<h2>Basics</h2>
+									<p>Cras mattis consectetur purus sit amet fermentum. Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.</p>
+								</section>
+								<!-- !!!END BASICS -->
+
+							</div>
+							<!-- !!!END ROW -->
+
 						</section>
-						<!-- !!!END ELEANOR -->
+						<!-- !!!END ABOUT TOUT -->
 
 
 
 				</section>
-				<!-- =========================== | END TEACHERS | =========================== -->
+				<!-- =========================== | END CLASSES | =========================== -->
 
 
 
 				<!-- ============================= | INSTAGRAM WRAP | ============================= -->
-				<section class="fullWrap iGram instagram nonM">
+				<section class="fullWrap">
 				
-					<h2>Instagram Feed</h2>
-					<ul>
-						<li><a href="#">Facebook</a></li>
-						<li><a href="#">Instagram</a></li>
-						<li><a href="#">Twitter</a></li>
-						<li><a href="#">Pintrest</a></li>
-					</ul>
-					<!-- Instagram Wrap -->
+
 					<section class="full">
-						<!-- <h2>Instagram is here | #GorgePowerYoga ?</h2> -->
+						<!-- Babtiste Power Yoga -->
+						<section class="half yogaType" style="background-color:#999">
+							<h2>What is Babtiste Power Yoga?</h2>
+							<p>Baptiste Power yoga is a powerful and all inclusive yoga practice that has evolved from various eastern and western practices. It is a flowing yoga practice that emphasizes building strength and flexibility as well as cultivating a peaceful mind, grounded energy, and true balance. The “Power” refers to tapping into your inner power, tuning into to what inspires you and challenging yourself to exceed your expectations.</p>
+							<p>People use this practice to dissolve anxiety, lose weight and keep it off; to create inner peace,  and spark inspiration in their life’s work, to improve athletic performance and to just plain feel good. With dedication, and a consistent practice results are fast and enduring. We warm the room to about 80 degrees for this practice.</p>
+							<a href="#" class="btn learnMore">Learn More</a>
+						</section>
+						<!-- END BABTISTE POWER YOGA -->
+
+						<!-- Yin Yoga -->
+						<section class="half yogaType" style="background-color:#ccc">
+							<h2>What is Yin Yoga?</h2>
+							<p>Yin yoga is a gentle practice that can bring your body back into a balanced state after a week of intense activity or stress. Where the Vinyasa practice emphasizes the movement of muscles, Yin concentrates on connective tissue and tendons. These are critical to our physical well being and range of motion. </p>
+							<p>Stimulation of these tissues can help produce collagen and hyoluronic acid as well which helps keep the body supple. Postures are practiced on the floor and each is held for a lengthy period, usually 3-5 minutes. As a result, the body is energized, encouraging a free flow of chi. Chi is described as the “life force” of the body that often gets blocked or stagnant. This class is taught at room temperature.</p>
+						</section>
+						<!-- END YIN YOGA -->
 					</section>
-					<!-- END INSTAGRAM WRAP -->
 				
 				</section>
 				<!-- =========================== | END INSTAGRAM WRAP | =========================== -->

@@ -31,6 +31,11 @@
    visibility: visible;
 }
 
+// btn overide to display inline block not block
+.btn.share.nonM {
+	display: inline-block !important;
+}
+
 
 
 

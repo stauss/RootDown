@@ -146,15 +146,123 @@
 //==================================================================
 //	About Page
 //==================================================================
+
+//-------------------------------------------------| Teachers Section
+
 // teachers wrap | this wraps all teachers
 .tea {
 	display: block;
 	float: left;
+
+	position: relative;
 	background-color: $wire1;
 }
 
+//-------------------------------------------------| Teachers Section Picture Nav
+
+// navagation to chnage images in teachers section
+.teaPicNav {
+	display: block;
+	width: 100px;
+	height: 50px;
+	overflow: visible;
+
+	position: absolute;
+
+ 	bottom: 20px;
+	left: 5%;
+	z-index: 1;
+
+}
+
+// popup that displays for a couple seconds then dissapears. Also appears on hover
+.popUp {
+	display: none;
+	width: 150px;
+
+	position: absolute;
+	top: -50px;
+	left: -15px;
+
+	color: $white;
+	text-align: center;
+	line-height: 16px;
+
+	background-color: $wire4;
+
+}
+
+// show popup on hover
+.teaPicNav:hover .popUp {
+	display: block;
+}
+
+// left and right arrows to toggle through favorite yoga poses of the teachers
+.teaPicNav a {
+	display: block;
+	float: left;
+	width: 50%;
+}
+
+// on hover no text decoration
+.teaPicNav a:hover {
+	text-decoration: none;
+}
+
+// icons
+.teaPicNav a i {
+	display: block;
+	float: left;
+	width: 100%;
+	padding: 8px;
+
+	text-align: center;
+	font-size: 3em;
+}
+
+//-------------------------------------------------| Teachers Section Title
+
+// About tout wraps all the teacher sections
+.aboutTout {
+	display: block;
+	float: left
+}
+
+// About tout teacher title
+.aboutTout h2 {
+	display: block;
+	float: left;
+	width: 100%;
+	height: 100px;
+	padding: 0;
+	margin: -30px 0 0 0;
+
+	text-align: center;
+}
+
+// second line of the learn about our teachers title
+.aboutTout h2 span {
+	display: block;
+	float: left;
+	width: 100%;
+
+	text-transform: uppercase;
+	font-size: 2em;
+}
+
+//-------------------------------------------------| Teachers Section Nav
+
 // nav for the teachers section
 .teaLinks {
+	display: block;
+	float: left;
+	width: 100%;
+
+	background-color: $b;
+}
+
+// nav for the teachers section
+.teaLinks ul {
 	display: block;
 	width: 100%;
 	height: 50px;
@@ -172,7 +280,7 @@
 }
 
 // actual teachers links <a> tags
-.teaLinks li a {
+.teaLinks a {
 	width: 100%;
 	height: 100%;
 	padding: 12px 0;
@@ -182,10 +290,69 @@
 	border-left: 1px solid #ccc;
 }
 
+// disable text decoration on hover
+.teaLinks a:hover {
+	text-decoration: none;
+}
+
 // !!!EDIT first childs border needs to be taken away via the : first-child selector
 
+//-------------------------------------------------| Teachers Inner Section 
 
+// teacher wrap | wraps all the teachers that you can toggle trough
+.teaWrap {
+	display: block;
+	float: left;
 
+	position: relative;
+}
+
+//-------------------------------------------------| About Instagram Section 
+
+// about instagram feed from root downs feed
+.aboutGram {
+	display: block;
+	float: left;
+	width: 100%;
+	padding: 5%;
+
+	background-color: $white;
+}
+
+// about instagram header
+.aboutGram h2 {
+	display: block;
+	float: left;
+}
+
+// about social icons 
+.aboutSocial {
+	display: block; 
+	float: right;
+	width: 200px;
+
+	overflow: hidden;
+
+}
+
+// socail icons list items
+.aboutSocial a {
+	display: block;
+	float: left;
+	width: 25%;
+}
+
+// disable hover text decoration
+.aboutSocial a:hover {
+	text-decoration: none;
+}
+
+// icons within the list items a tags
+.aboutSocial i {
+	display: block;
+	width: 100%;
+	text-align: right;
+}
 
 //==================================================================
 //	Classes Page
@@ -195,15 +362,18 @@
 .classWrap {
 	display: block;
 	float: left;
+	padding: 5%;
 }
 
 // Two called out Yoga Type Classes at the bottom of the classes page
 .yogaType {
 	display: block;
 	float: left;
+	padding: 5%;
+
+	// !!!EDIT REMOVE AFTER WIREFRAMES ARE COMPLETE
+	margin: 20px 0;
 }
-
-
 
 
 
@@ -212,6 +382,49 @@
 //	Contact Page
 //==================================================================
 
+// section that wraps the google map | created to position realative 
+.map {
+	display: block;
+	float: left;
+	position: relative;
+}
+
+// Contact info inside the map header
+.heroContact {
+	display: block;
+	width: 350px;
+	height: 150px;
+	overflow: hidden;
+
+	position: absolute;
+	top: 120px;
+	right: 0px;
+	z-index:1;
+
+	background-color: $white;
+}
+
+// Goggle Map containter
+.mapWrap {
+    position: relative;
+    //padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 330px !important;
+    height: 0;
+    max-height: 330px !important;
+    overflow: hidden;
+}
+
+.mapWrap iframe,   
+.mapWrap object,  
+.mapWrap embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-height: 330px;
+}
 
 // Display & Box Model
 // Positioning

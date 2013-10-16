@@ -171,7 +171,7 @@
 				<section class="gHeroWrap fullWrap">
 
 						<!-- Global Hero | Main image / video / slider after header -->
-						<section class="gHero full">
+						<section class="gHero full map">
 							<div class="heroContact">
 								<a href="#">541.771.8144</a>
 								<span>202 Cascade ave. Hoor River, OR</span>
@@ -182,7 +182,13 @@
 									<li><a href="#">Pintrest</a></li>
 								</ul>
 							</div>
-							<div><img src="http://placehold.it/1200x550&text=Map"></div>
+
+							<!-- Google Maps -->
+							<div class="mapWrap">
+								<iframe width="1200" height="330" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=202+Cascade+ave.+Hoor+River,+OR&amp;aq=&amp;sll=44.145447,-120.583402&amp;sspn=6.086168,10.656738&amp;t=m&amp;ie=UTF8&amp;hq=&amp;hnear=202+Cascade+Ave,+Hood+River,+Oregon+97031&amp;ll=45.716967,-121.512566&amp;spn=0.019776,0.102911&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=202+Cascade+ave.+Hoor+River,+OR&amp;aq=&amp;sll=44.145447,-120.583402&amp;sspn=6.086168,10.656738&amp;t=m&amp;ie=UTF8&amp;hq=&amp;hnear=202+Cascade+Ave,+Hood+River,+Oregon+97031&amp;ll=45.716967,-121.512566&amp;spn=0.019776,0.102911&amp;z=14&amp;iwloc=A" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+							</div>
+							<!-- !!!END GOOGLE MAPS -->
+
 						</section>
 						<!-- !!!END GLOBAL HERO -->
 
